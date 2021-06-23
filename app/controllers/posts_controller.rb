@@ -14,7 +14,7 @@ class PostsController < ApplicationController
       render :new
     else
       if @post.save
-        redirect_to new_post_path,notice: 'つぶやきを投稿しました!'
+        redirect_to posts_path,notice: 'つぶやきを投稿しました!'
       else
         render :new
       end
